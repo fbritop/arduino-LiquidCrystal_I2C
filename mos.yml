@@ -1,0 +1,27 @@
+author: Dionid <ditreyw@gmail.com>
+description: Arduino LiquidCrystal_I2C library
+type: lib
+
+version: 1.0
+
+sources:
+  - src
+
+includes:
+  - include
+
+cxxflags:
+  - "-Wno-unused-parameter"
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/arduino-compat
+  - origin: https://github.com/mongoose-os-libs/arduino-wire
+
+tags:
+  - arduino
+  - c
+  - js
+  - hw
+
+# Used by the mos tool to catch mos binaries incompatible with this file format
+manifest_version: 2017-09-29
